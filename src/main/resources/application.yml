@@ -1,0 +1,16 @@
+server:
+  port: 8282
+spring:
+  security:
+    user:
+      name: kiran
+      password: kiran123
+      roles: ADMIN,USER
+security:
+  oauth2:
+    client:
+      client-id: mobile
+      client-secret: pin
+      access-token-validity-seconds: 1200
+      authorized-grant-types: refresh-token,authorization-code,password,client-credentials
+      scope: READ,WRITE
